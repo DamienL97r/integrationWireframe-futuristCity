@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Ubuntu;
+    scroll-behavior: smooth;
+}
+
+.anchor {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    height: 50px;
+    width: 50px;
+    background-color: #ff9900;
+    border: 3px solid white;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.anchor > img {
+    height: 30px;
+    transform: rotate(-90deg);
+}
+
+.top {
+    background-color: #444444;
+    display: flex;
+    justify-content: center;
+}
+
+.top > .logo {
+    height: 30px;
+    padding: 8px;
+}
+
+header{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+header > nav {
+    background-color: #ff9900;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+
+header > nav > .onglets {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    padding: 15px 30px;
+}
+
+header > nav > .onglets:hover {
+    background-color: #444444;
+}
+
+.call-to-action {
+    height: 650px;
+}
+
+.call-to-action > img {
+    width: 100%;
+    height: inherit;
+    border-bottom: 12px solid #ff9900;
+}
+
+.section {
+    background-color: #444444;
+    padding-top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-right {
+    width: 400px;
+    margin-right: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-left {
+   width: 400px;
+   margin-left: 5%;
+   color: white;
+}
+
+.section-left > h2 {
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    font-size: 1rem;
+}
+
+.section-left > p{
+    margin-bottom: 30px;
+    font-size: 0.8rem;
+}
+
+.section-right > img {
+    margin-bottom: 50px;
+    height: 270px;
+    filter: invert();
+}
+
+.btn-orange{
+    background-color: #ff9900;
+    border: none;
+    padding: 15px 30px;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+
+.title-section {
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    font-size: 1rem;
+    margin-left: 5%;
+    margin-top: 30px;
+    color: #444444;
+}
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card-article{
+    background-color: #ff9900;
+    margin: 10px;
+    
+    width: 350px;
+    height: auto;
+    color: white;
+}
+
+.card-article > h4 {
+    margin: 20px 0 10px 20px ;
+}
+
+.card-article > p {
+    margin: 20px 20px 10px 20px;
+    text-align: justify;
+}
+
+.card-article > span {
+    float: right;
+    margin: 30px;
+}
+
+.card-article > img {
+    width: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+.contact-section {
+    width: 100%;
+    display: flex;
+    margin-top: 5%;
+}
+
+.title-section-contact {
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    font-size: 1.5rem;
+    margin-top: 40px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.map {
+    width: 50%;
+    background-image: url(/ressources/ressources/map.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.form{
+    width: 50%;
+    background-color: #ff9900;
+    justify-content: center;
+}
+
+.form > form{
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+.form-line-full {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.form-half {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-full {
+    width: 87%;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-form {
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.btn-grey{
+    background-color: #444444;
+    border: none;
+    padding: 15px 30px;
+    margin-top: 50px;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    background-color: #444444;
+    padding: 20px 50px;
+}
+
+
+
+
+
+/*RESPONSIVE MOBILE*/
+
+@media screen and (max-width: 500px){
+
+    header > nav > .onglets {
+        text-decoration: none;
+        color: white;
+        font-weight: 500;
+        padding: 15px 30px;
+        font-size: 0.9rem;
+    }
+
+    .call-to-action {
+        height: 300px;
+    }
+
+    .section-right > img {
+        margin-bottom: 50px;
+        height: 100px;
+        filter: invert();
+    }
+
+    .card-article{
+        background-color: #ff9900;
+        margin: 10px;
+        
+        width: 300px;
+        height: auto;
+        color: white;
+    }
+
+    .contact-section {
+        width: 100%;
+        display: flex;
+        margin-top: 5%;
+    }
+
+    .map {
+        display: none;
+    }
+
+    .form{
+        width: 100%;
+        background-color: #ff9900;
+        justify-content: center;
+    }
+
+    .form-line-full {
+        display: flex;
+        flex-direction: column;
+        margin-left: 7%;
+        width: 100%;
+    }
+
+    .form-half {
+        width: 92%;
+        display: flex;
+        flex-direction: column;
+    }
+
+}
