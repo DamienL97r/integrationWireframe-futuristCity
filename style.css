@@ -185,7 +185,7 @@ header > nav > .onglets:hover {
 
 .map {
     width: 50%;
-    background-image: url(/ressources/ressources/map.png);
+    background-image: url(ressources/ressources/map.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
